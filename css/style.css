@@ -1,0 +1,538 @@
+#galeria .col-lg-4{
+margin: 0;
+padding: 15px;
+}
+#galeria img{
+width: 100%;
+height: 80%;
+}
+#galeria img:hover {
+    border: 5px solid #f7f7f7;
+}
+
+
+
+.gallery__title{
+    position: relative;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(235, 232, 232, 0),rgb(0, 0, 0));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+/*#tabla {
+text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+}*/
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+
+    thead th:nth-child(1) {
+        width: 20%;
+    }
+
+    thead th:nth-child(2) {
+        width: 20%;
+    }
+
+    thead th:nth-child(3) {
+        width: 20%;
+    }
+
+    thead th:nth-child(4) {
+        width: 20%;
+    }
+
+    thead th:nth-child(5) {
+        width: 20%;
+    }
+
+    th, td {
+        padding: 20px;
+    }
+
+    html {
+        font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    }
+
+    thead th, tfoot th {
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    th {
+        letter-spacing: 2px;
+    }
+
+    td {
+        letter-spacing: 1px;
+    }
+    
+    tbody td {
+        text-align: center;
+    }
+    
+    tfoot th {
+        text-align: center;
+    }
+
+    thead, tbody th, tfoot {
+        background:#666;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    thead th, tbody tr, tfoot th, tfoot td {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+        border: 3px solid rgb(207, 203, 207);
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #06b8d8;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #a2c4f7;
+    }
+    
+    tbody tr {
+        background-image: url(noise.png);
+    }
+    
+    table {
+        background-color: #666365;
+    }
+
+    caption {
+        font-family: 'Rock Salt', cursive;
+        padding: 20px;
+        font-style: italic;
+        caption-side: bottom;
+        color: #666;
+        text-align: right;
+        letter-spacing: 1px;
+    }
+
+
+
+/*body{
+    background-color: #069fce;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+header {
+    text-align: start;
+    color: #eff3f0;
+    min-height: 5px;
+    border-radius: 5px;
+}
+
+nav {
+    text-align: end;
+    padding: 5px;
+    padding-bottom: auto;
+    background-color: #020202;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: #020202;
+    color: #eff3f0;
+    border-radius: 5px;
+}
+
+ul{
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.menu{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 320px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.gallery__item{
+    position: relative;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*
+.gallery__item:nth-child(1){
+    grid-column-start: span 1;
+}
+.gallery__item:nth-child(1){
+    grid-row-start: span 1;
+}
+
+img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+
+
+.section{
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.centrado{
+    display: inline-block;
+    width: 40%;
+    vertical-align: justify;
+    padding: 1rem;
+}
+
+.centrado p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.formulario {
+    text-align: center;
+    font-weight: 700;
+    color: #373a3c;
+    padding: 30px;
+}
+
+label {
+    text-align: center;
+    font-weight: 700;
+    color: #373a3c;
+    padding: 20px;
+    position: relative;
+}
+
+button {
+    width: 50px;
+    border-bottom: #020202;
+    position: relative;
+}
+
+footer {
+    color: white;
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    height: 20px;
+    padding-top: 10px;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+table, input,textarea, footer{
+    width: 100%;
+    position: relative;
+    
+}
+
+/*@media(min-width:320px){
+    .gallery-container{
+        grid-template-columns: repeat(2, 1rf);
+        width: 90%;
+        margin: auto;
+    }
+    .gallery__item:nth-child(1){
+        grid-column-start: span 2;
+        grid-row-start: span 1;
+    }
+    .gallery__item:nth-child(2){
+        grid-column-start: span 2;
+        grid-row-start: span 1;
+    }
+    .gallery__item:nth-child(3){
+        grid-column-start: span 2;
+        grid-row-start: span 1;
+    }
+    .gallery__item:nth-child(4){
+        grid-column-start: span 2;
+    }
+    .gallery__item:nth-child(5){
+        grid-column-start: span 2;
+    }
+    .gallery__item:nth-child(6){
+        grid-column-start: span 2;
+    }
+
+    h2{
+        width: 100%;
+        height: 100%;
+        float: auto;}
+
+    .formulario{
+        width: 100%;
+        height: 100%;
+        float: center}
+    .menu{
+        width: 100%;
+        height: 100%;
+        float: center;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+        float: center}
+
+    .centrado{
+        width: 100%;
+        height: 100%;
+        float: center
+        }
+    .centrado p{
+        width: 100%;
+        height: 100%;
+        float: center
+        }
+    header{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    nav{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    ul{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    }
+
+
+    @media (min-width:480px){
+        .gallery-container{
+            grid-template-columns: repeat(2, 1rf);
+            width: 90%;
+            margin: auto;
+        }
+        .gallery__item:nth-child(1){
+            grid-column-start: span 2;
+            grid-row-start: span 1;
+        }
+        .gallery__item:nth-child(2){
+            grid-column-start: span 1;
+            grid-row-start: span 1;
+        }
+        .gallery__item:nth-child(3){
+            grid-column-start: span 1;
+            grid-row-start: span 1;
+        }
+        .gallery__item:nth-child(4){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(5){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(6){
+            grid-column-start: span 1;
+        }
+        footer{
+            width: 100%;
+            height: 100%;
+            float: center}
+
+        h2{
+            width: 100%;
+            height: 100%;
+            float: auto;}
+        .formulario{
+            width: 100%;
+            height: 100%;
+            float: center}
+        .menu{
+            width: 100%;
+            height: 100%;
+            float: center;
+            }
+        .centrado{
+            width: 100%;
+            height: 100%;
+            float: center
+            }
+        .centrado p{
+            width: 100%;
+            height: 100%;
+            float: center
+            }
+        header{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+        nav{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+    }
+    
+    @media (min-width:768px){
+        .gallery-container{
+            grid-template-columns: repeat(4, 1rf);
+        }
+        .gallery__item:nth-child(1){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(2){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(3){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(4){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(5){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(6){
+            grid-column-start: span 1;
+        }
+        footer{
+            width: 100%;
+            height: 100%;
+            float: center}
+        h2{
+            width: 100%;
+            height: 100%;
+            float: auto;}
+        .formulario{
+            width: 100%;
+            height: 100%;
+            float: center}
+        .menu{
+            width: 70%;
+            height: 70%;
+            float: center;
+            }
+        .centrado{
+            width: 100%;
+            height: 100%;
+            float: center
+            }
+        .centrado p{
+            width: 100%;
+            height: 100%;
+            float: center
+            }
+        header{
+            width: 100%;
+            height: 100%;
+            float: center;
+        }
+        nav{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+    }
+    
+    @media (min-width:1024px){
+        .gallery-container{
+            grid-template-columns: repeat(5, 1rf);
+            width: 90%;
+            margin: auto;
+        }
+        .gallery__item:nth-child(1){
+            grid-column-start: span 1;
+            grid-row-start: span 1;
+        }
+        .gallery__item:nth-child(2){
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+        .gallery__item:nth-child(3){
+            grid-column-start: span 1;
+            grid-row-start: span 1;
+        }
+        .gallery__item:nth-child(4){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(5){
+            grid-column-start: span 1;
+        }
+        .gallery__item:nth-child(6){
+            grid-column-start: span 1;
+        }
+        footer{
+            width: 100%;
+            height: 100%;
+            float: center}
+        h2{
+            width: 100%;
+            height: 100%;
+            float: auto;}
+        .formulario{
+            width: 100%;
+            height: 100%;
+            float: center}
+        .menu{
+            width: 50%;
+            height: 50%;
+            float: center;
+            }
+        header{
+            width: 100%;
+            height: 100%;
+            float: center;
+        }
+        nav{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+    }
+
